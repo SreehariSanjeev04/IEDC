@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero {
+  background-image: url("assets/xl-hero-desktop_2021.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+a {
+  color: #008248;
+  text-decoration: underline;
+}
