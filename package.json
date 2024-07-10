@@ -2,7 +2,7 @@
   "name": "iedc",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sreeharisanjeev04.github.io/Starbucks/",
+  "homepage": "https://sreeharisanjeev04.github.io/IEDC",
   "type": "module",
   "scripts": {
     "dev": "vite",
