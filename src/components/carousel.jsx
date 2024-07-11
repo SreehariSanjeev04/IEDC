@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-function CarouselSlider() {
+function CarouselSlider({id}) {
     const CarouselEffect = () => {
-        let sliderContainer = document.getElementById('sliderContainer');
-        let slider = document.getElementById('slider');
+        let sliderContainer = document.getElementById('sliderContainer' + `${-id}`);
+        let slider = document.getElementById('slider' + `${-id}`);
         let cards = slider.getElementsByTagName('li');
-        let elementsToShow = 4;
+        let elementsToShow = Math.floor(screen.width / 300);
         let sliderContainerWidth = sliderContainer.clientWidth;
         let cardWidth = sliderContainerWidth/elementsToShow;
         slider.style.width = cards.length * cardWidth + 'px';
@@ -15,19 +15,19 @@ function CarouselSlider() {
         }
     }
     function prev() {
-        let sliderContainer = document.getElementById('sliderContainer');
-        let slider = document.getElementById('slider');
+        let sliderContainer = document.getElementById('sliderContainer'+`${-id}`);
+        let slider = document.getElementById('slider'+`${-id}`);
         let cards = slider.getElementsByTagName('li');
-        let elementsToShow = 4;
+        let elementsToShow = Math.floor(screen.width/300);
         let sliderContainerWidth = sliderContainer.clientWidth;
         let cardWidth = sliderContainerWidth/elementsToShow;
         if(+slider.style.marginLeft.slice(0,-2)!= -cardWidth * (cards.length - elementsToShow))
         slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))-cardWidth) + 'px'
     }
     function next() {
-        let sliderContainer = document.getElementById('sliderContainer');
-        let slider = document.getElementById('slider');
-        let elementsToShow = 4;
+        let sliderContainer = document.getElementById('sliderContainer'+`${-id}`);
+        let slider = document.getElementById('slider'+`${-id}`);
+        let elementsToShow = Math.floor(screen.width / 300);
         let sliderContainerWidth = sliderContainer.clientWidth;
         let cardWidth = sliderContainerWidth/elementsToShow;
         if(+slider.style.marginLeft.slice(0,-2)!=0)
@@ -46,8 +46,8 @@ function CarouselSlider() {
                     </button>
                 </div>
             </div>
-            <div id="sliderContainer" className="w-full overflow-hidden py-10">
-                <ul id="slider" className="flex w-full transition-margin duration-700 "> 
+            <div id={"sliderContainer"+`${-id}`} className="w-full overflow-hidden py-10">
+                <ul id={"slider"+`${-id}`} className="flex w-full transition-margin duration-700 "> 
                     <li className="hover:-translate-y-5 transition-transform duration-700">
                         <div className="mr-5">
                         <img className="rounded-xl"  class="block sb-svc-image--image sb-imageFade__imagePositioning sb-imageFade__show" src="https://globalassets.starbucks.com/digitalassets/cards/fy24/FriendsBuyCoffeeFY24.png" alt="Gift card image: On a green and yellow background a smiling cloud and smiling sun cheers their iced beverages with the words Friends Buy Friends Coffee written in orange. " />

@@ -1,6 +1,6 @@
 function Instructions() {
     return (
-        <div className="bg-white py-16 text-center space-y-6 mx-32">
+        <div className="bg-white py-16 text-center space-y-6 mx-10 md:mx-32">
             <h1 className="text-2xl md:text-4xl font-semibold">Getting started is easy</h1>
             <h3 className="text-lg md:text-2xl">Earn Stars and get rewarded in a few easy steps.</h3>
             <div className="grid grid-cols-1 md:grid-cols-3">
