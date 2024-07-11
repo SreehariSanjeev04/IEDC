@@ -29,7 +29,7 @@ function Navbar() {
                 <button className="border-2 mr-4 border-black bg-white text-black rounded-2xl py-1.5 px-4 font-semibold">Sign In</button>
                 <button className=" bg-black text-white rounded-2xl py-1.5 px-4 font-semibold">Join Now</button>
             </ul>
-            <img src={hamburger} onClick={handleOpen} className="h-5 w-8 md:hidden" alt="" />
+            <img src={hamburger} onClick={handleOpen} className={"h-5 w-8 md:hidden" + `${clicked ? " hidden":""}`} alt="" />
             <img src={close} onClick={handleClose} className={"h-3 w-3 " + `${clicked ? "block z-20":"hidden"}` }alt="" />
             
             </nav>
