@@ -27,7 +27,7 @@ function Footer() {
             </ul>
            
             
-            <p className="text-slate-600 font-semibold">© 2024 Starbucks Coffee Company. All rights reserved.</p>
+            <p className="text-slate-600 font-semibold">© 2024 Frontend Coffee. Just a project.</p>
         </div>
     )
 }

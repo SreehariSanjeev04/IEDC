@@ -4,23 +4,23 @@ function Favourites() {
     const data = [{
         image: "http://www.starbucks.com//weblx/images/rewards/reward-tiers/25.png",
         title: "Customize your drink",
-        desc: "Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup."
+        desc: "Make your drink just right with an extra shot, milk or a dash of your favorite syrup."
     }, {
         image: "http://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png",
         title: "Brewed hot or iced coffee or tea, bakery item, packaged snack and more",
-        desc: "Treat yourself to an iced coffee, buttery croissant, bag of chips and more."
+        desc: "Treat yourself to an iced coffee,croissant, bag of french fries and more."
     }, {
-        image: "http://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png",
-        title: "Handcrafted drink (Cold Brew, lattes and more) or hot breakfast",
-        desc: "Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us."
+        image: "http://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png",
+        title: "Brewed hot or iced coffee or tea, bakery item, packaged snack and moret",
+        desc: "Turn good mornings great with a handcrafted drink of your choice, sandwich or oatmeal on us."
     },{
         image: "http://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png",
         title: "Brewed hot or iced coffee or tea, bakery item, packaged snack and more",
-        desc: "Treat yourself to an iced coffee, buttery croissant, bag of chips and more."
+        desc: "Treat yourself to an coffee croissant, bag of chips and more."
     },{
         image: "http://www.starbucks.com//weblx/images/rewards/reward-tiers/25.png",
         title: "Customize your drink",
-        desc: "Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup."
+        desc: "Make your drink just right with an espresso shot, milk or a dash of your syrup."
     }]
     const [selectedTab,setTab] =  useState(0);
     const points = [25,100,200,300,400];
